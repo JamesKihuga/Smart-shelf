@@ -1,0 +1,60 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+
+{% block body %}
+
+    <form method="POST" style="padding: 20px; background-color: #1c1c1c; border-radius: 10px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); max-width: 800px; margin: auto;">
+  {% csrf_token %}
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <input type="number" name="number" id="form6Example1" class="form-control" required style="background-color: #333; color: #e0e0e0; border-radius: 5px;">
+        <label class="form-label" for="form6Example1" style="color: #76ff03;">Id no</label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <input type="text" name="location" id="form6Example2" class="form-control" required style="background-color: #333; color: #e0e0e0; border-radius: 5px;">
+        <label class="form-label" for="form6Example2" style="color: #76ff03;">Location</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Date input -->
+  <div class="form-outline mb-4">
+    <input type="date" name="date" id="form6Example3" class="form-control" required style="background-color: #333; color: #fff; border-radius: 5px;">
+    <label class="form-label" for="form6Example3" style="color: #76ff03;">Date Booked</label>
+  </div>
+
+  <!-- Due Date input -->
+  <div class="form-outline mb-4">
+    <input type="date" name="due_date" id="form6Example4" class="form-control" required style="background-color: #333; color: #fff; border-radius: 5px;">
+    <label class="form-label" for="form6Example4" style="color: #76ff03;">Pick up Date</label>
+  </div>
+
+  <!-- Weight input -->
+  <div class="form-outline mb-4">
+    <input type="text" name="weight" id="form6Example5" class="form-control" required style="background-color: #333; color: #e0e0e0; border-radius: 5px;">
+    <label class="form-label" for="form6Example5" style="color: #cfcfcf;">Weight</label>
+  </div>
+
+  <!-- Price input -->
+  <div class="form-outline mb-4">
+    <input type="text" name="price" id="form6Example6" class="form-control" required style="background-color: #333; color: #e0e0e0; border-radius: 5px;">
+    <label class="form-label" for="form6Example6" style="color: #cfcfcf;">Price</label>
+  </div>
+
+  <!-- Checkbox -->
+  <div class="form-check d-flex justify-content-center mb-4">
+    <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked style="background-color: #333; color: #fff; border-radius: 5px;">
+    <label class="form-check-label" for="form6Example8" style="color: #76ff03;">Book a shelf</label>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4" style="background-color: #ff4081; border-color: #ff4081; font-size: 1rem;">Book Now</button>
+</form>
+
+
+
+
+{% endblock %}

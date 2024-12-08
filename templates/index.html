@@ -1,0 +1,281 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block body %}
+	<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="{% static 'assets/img/hero-carousel/shelf 1.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2 style="align-content: center">Welcome to SmartStores shelf service<br></h2>
+            <p>We provide a convinient, reliable and all sized product storage for easy picking and safety measure.</p>
+            <a href="{% url 'register' %}" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/customer.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>City center collection Terminal</h2>
+            <p>Happy  customer collecting goods purchased and  stored in our  store.</p>
+            <a href="{% url 'portfolio' %}" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/shelfs 2.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>Service CENTER Declaration</h2>
+            <p>Our efficient customer service team is ready to serve you.</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>About Us<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              How We Make Your Experience Effortles !!
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Book a shelf to keep your purchases until youʼre ready to collect!</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Access your items anytime with our round-the-clock service!.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Your items are secured with our safety process for peace of mind!</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>We simplify your shopping experience! When you buy, just book a shelf to store your goods safely. Collect them at your convenience with the help of our friendly attendant.
+                Enjoy hassle-free storage and peace of mind every time! </p>
+            <a href="{% url 'about' %}" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/turskeys.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/quickmart.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/jamaa.jpg' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/naivas.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/walmart.jpg' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'assets/img/clients/robinson.png' %}" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-briefcase icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Academic Documents</a></h4>
+                <p class="description">"Secure your academic papers with us! Our organized, affordable, and safe storage shelves ensure your documents are always protected, accessible, and well-preserved.
+                    Focus on your studies while we safeguard your academic achievements for the future."</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Land and properties</a></h4>
+                <p class="description">
+"Safeguard your land and property documents with us! Our secure, organized storage ensures your valuable records are protected, easily accessible, and preserved for generations.
+                    Trust us to keep your investments safe, giving you peace of mind."</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-bar-chart icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Vehicle log Books</a></h4>
+                <p class="description"> "Keep your vehicle logbooks and particulars safe with our secure storage solutions. Our reliable system ensures easy access, protection from loss or damage,
+                    and complete peace of mind for your valuable documents at all times."</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-binoculars icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Advocate Files</a></h4>
+                <p class="description">
+"Ensure your legal files are securely stored with us. Our organized, confidential storage solutions protect sensitive documents, provide easy access, and maintain professional standards,
+                    giving advocates peace of mind and efficiency in managing their cases."</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Business Agreements</a></h4>
+                <p class="description">"Protect your business agreements with our secure storage solutions. We ensure confidentiality, easy access, and long-term preservation,
+                    so you can focus on growing your business while we safeguard your vital documents."</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Collateral Documentation</a></h4>
+                <p class="description">"Store your collateral documents securely with us. Our trusted storage ensures confidentiality, easy access, and protection against loss or damage,
+                    providing peace of mind to all parties involved in the agreement."</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Booked Shelfs</h2>
+        <p>Check out your product</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Documents</li>
+            <li data-filter=".filter-product">products</li>
+            <li data-filter=".filter-branding">Valuables</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-2.jpg' %}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{% url 'portfolio' %}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-2.jpg' %}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{% url 'portfolio' %}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-7.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-7.jpg' %}" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-8.jpg' %}" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+              <!-- End Portfolio Item -->
+
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+  </main>
+{% endblock %}

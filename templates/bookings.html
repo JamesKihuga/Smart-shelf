@@ -1,0 +1,35 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block body %}
+
+    <table class="table table-hover container">
+<tr>
+    <th>Id no</th>
+    <th>Location</th>
+    <th>Start Date</th>
+    <th>End date</th>
+    <th>Weight</th>
+    <th>Price</th>
+    <th>Action</th>
+</tr>
+    {% for x in allbookings %}
+        <tr>
+            <td>{{x.number}}</td>
+            <td>{{x.location}}</td>
+            <td>{{x.date}}</td>
+            <td>{{x.due_date}}</td>
+            <td>{{x.weight}}</td>
+            <td>{{x.price}}</td>
+
+            <td>
+               <a href="/delete/{{x.id}}" class="btn btn-danger">Delete</a>
+                <a href="/update/{{x.id}}" class="btn btn-primary">update</a>
+                <a href="/edit/{{x.id}}" class="btn btn-secondary">Pay</a>
+            </td>
+        </tr>
+
+    {% endfor %}
+
+    </table>
+
+{% endblock %}

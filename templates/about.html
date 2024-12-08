@@ -1,0 +1,257 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block body %}
+	 <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">About</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="current">About</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- About 2 Section -->
+    <section id="about-2" class="about-2 section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-5">
+            <div class="about-img">
+{#              <img src="{% static 'assets/img/about-2.jpg %}" class="img-fluid" alt=">#}
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <h3 class="pt-0 pt-lg-5"> SmartShelfs offers you Storage for all your valuables</h3>
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#about-2-tab1">Products</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#about-2-tab2">Documents</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#about-2-tab3">Valuables</a></li>
+            </ul><!-- End Tabs -->
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="about-2-tab1">
+
+                <p class="fst-italic">"Store your daily essentials securely in our one-day shelves. Perfect for quick storage of items like books, documents, or packages, ready for easy same-day collection."</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>"Quick Storage Solutions for Daily Essentials"</h4>
+                </div>
+                <p> "Keep your fast-moving perishable goods safe in our one-day shelves. Designed for freshness and quick access,
+                    our secure storage ensures your items are ready for same-day collection with ease."</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Fast and reliable </h4>
+                </div>
+                <p>"Experience fast and reliable storage with us. Our secure facilities ensure your items are protected,
+                    accessible, and ready whenever needed, providing convenience and peace of mind."</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Super Security</h4>
+                </div>
+                <p>"Enjoy super security for your valuables with our advanced systems.
+                    From 24/7 surveillance to secure access, we ensure maximum protection and peace of mind."</p>
+
+              </div><!-- End Tab 1 Content -->
+
+              <div class="tab-pane fade" id="about-2-tab2">
+
+                <p class="fst-italic">Pick up convinience</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>"Enjoy easy pickup convenience with our organized storage, designed to save your time."</h4>
+                </div>
+                <p>"Experience unmatched pickup convenience with our efficient storage solutions. Our organized system ensures quick access to your items,
+                    saving you time and effort while maintaining security and reliability for a seamless experience."</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>friendlly customer  service</h4>
+                </div>
+                <p>"Experience friendly customer service with our team.
+                    We’re here to assist you with professionalism, care, and a personal touch."</p>
+
+
+                <p>"Enjoy exceptional customer service with our friendly team, dedicated to assisting you with professionalism, care, and a personal touch every step of the way."</p>
+
+              </div><!-- End Tab 2 Content -->
+
+              <div class="tab-pane fade" id="about-2-tab3">
+
+                <p class="fst-italic">"Store your valuables with us for unmatched security, easy access, 24/7 surveillance, organized storage, and peace of mind knowing your items are safe and well-protected."</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>"Top Benefits of Storing Your Valuables with Us"</h4>
+                </div>
+                <p>
+"We securely store your valuables, ensuring they are well-organized, protected with 24/7 surveillance, easily accessible,
+                    and preserved in a climate-controlled environment for maximum security and peace of mind."</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>"How We Safeguard and Preserve Your Valuables"</h4>
+                </div>
+                <p> "We prioritize the safety of your valuables by using secure storage, 24/7 surveillance, climate control,
+                    and organized systems, ensuring they are preserved and easily accessible whenever you need them."</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>"Trust us to keep your valuables safe, organized, and accessible—peace of mind guaranteed."</h4>
+                </div>
+                <p> "Trust us to keep your valuables secure, organized, and easily accessible. Our storage
+                    solutions offer peace of mind, ensuring your items are always protected and ready when you need them."</p>
+
+              </div><!-- End Tab 3 Content -->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About 2 Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Shelfs</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Centers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/james passport.jpeg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>James Muiruri</h4>
+                <span>Center Manager</span>
+                <p>Doctorate in purchasing and supplies</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/download (9).jfif' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Daniel Wangombe</h4>
+                <span>Logistic Manager</span>
+                <p>philosophy of Anthropology</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/download (14).jfif' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Hon Samuel Kosgei</h4>
+                <span>Team Leader</span>
+                <p>Relations management Diploma</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/team/mathaatra 1.jpg' %}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Japhet Murumba</h4>
+                <span>Accountant</span>
+                <p>CPA K finalist with Commerce</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+
+  </main>
+{% endblock %}
